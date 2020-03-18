@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,13 +8,14 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="676dp"
-        android:background="#f1c40f"
+        android:layout_width="372dp"
+        android:layout_height="478dp"
+        android:background="@drawable/et_custom"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-17dp"
-        tools:layout_editor_absoluteY="16dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView"
@@ -22,17 +23,8 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/logo2" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="@string/loginpage"
-            android:textSize="18dp"
-            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
@@ -41,17 +33,18 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:text="@string/welcome"
-            android:textSize="16dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/username"
-            android:layout_width="match_parent"
+            android:layout_width="299dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/et_custom"
+            android:background="@drawable/et_custom2"
             android:hint="UserName"
             android:inputType="textEmailAddress"
             android:padding="15dp"
@@ -59,13 +52,13 @@
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/et_custom"
+            android:background="@drawable/et_custom2"
             android:hint="Password"
             android:inputType="textPassword"
             android:padding="15dp"
@@ -101,5 +94,21 @@
 
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="300dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="616dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo3" />
 
-</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
