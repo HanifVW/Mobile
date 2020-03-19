@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditReminder">
+    tools:context=".page1">
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="363dp"
@@ -22,40 +22,19 @@
         app:layout_constraintVertical_bias="0.605">
 
         <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="105dp"
-            android:layout_height="93dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/logo2" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="REMINDER 1"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="REMINDER 2"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-
-        <Button
-            android:id="@+id/button"
-            android:layout_marginTop="20dp"
+            android:id="@+id/imageView8"
             android:background="@drawable/et_custom2"
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            app:srcCompat="@drawable/quotes" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="240dp"
+            android:layout_height="327dp"
             android:layout_gravity="center"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="SAVE" />
+            app:srcCompat="@drawable/ld2" />
+
 
     </LinearLayout>
 
